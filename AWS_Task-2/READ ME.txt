@@ -1,0 +1,38 @@
+AWS Task-2
+
+
+Task Description:
+
+Set up a VPC with an Internet gateway, create a public subnet with 256 IP addresses, a private subnet with 256 IP addresses, 
+make a route table connecting the Internet gateway and the subnets, and launch a Linux EC2 instance by using the above VPC and public subnet.
+
+
+My Comments:
+================================================
+
+EC2 Instance Name     : (AWS_AWS Task-2) 
+EC2 Instance ID       : i-0ca862ec31e273b28
+
+VPC Name              : umar-demo-vpc
+VPC ID                : vpc-0bcbb5c8094ec40ce
+
+Subnet Public Name    : umar-demo-subnet-public  
+Subnet ID	      : subnet-003027de7e834d184    
+
+Subnet Private Name   : umar-demo-subnet-private
+Subnet ID	      : subnet-08d7077e854b72d45
+
+Internet Gateway Name : Guvi_task_Internet_Gateway
+Internet Gateway ID   : igw-029837d832279f996
+
+Route table Name      : umar_demo_toute_table
+Route table ID        : rtb-07462b4984ce6f9bd
+
+
+PrintScreen-1  ==> Shows the Instance ID, VPC ID, Public Subnet ID.
+PrintScreen-2  ==> Shows the Internet Gateway ID associated with VPC ID.
+
+PrintScreen-3  ==> Shows the Public Subnet ID associated with VPC ID, Rouging Table, Available IP's are 250 because amazon reserves the first four IP and laste one IP. (Aws reserves, 10.0.0.0, 10.0.0.1, 10.0.0.2, 10.0.0.3 and 10.0.0.255)
+
+PrintScreen-4  ==> Shows the Private subnet ID associated with VPC that I've created and rouging table. 
+

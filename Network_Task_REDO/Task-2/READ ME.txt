@@ -1,0 +1,36 @@
+Network Task
+
+Question: 
+
+2.I have deployed an application in guvi.com:9000, and logs show my app is running, but I’m unable to view the page. Check whether my port is open or not ?
+
+
+Answer:
+
+Option-1 (Telnet Command)
+
+telnet guvi.com 9000
+
+We can use telnet guvi.com 9000 (If the port is open we get the connected message. If the port is not open we get the message "connection timeout" "
+Unable to connect"
+
+Option-2 Netcat (nc)
+
+nc -zv guvi.com 9000
+
+
+We can use the following online tool.
+
+a) YouGetSignal Port Checker
+b) Ping.eu Open Port Checker
+
+Testing Locally on the Server:
+
+http://localhost:9000
+http://104.26.4.88:9000
+http://104.26.5.88:9000
+
+Additionally we can check server Firewall and Security Groups:
+
+Conclusion: I've checked the telnet and Netcat command for guvi.com 9000 also checked the YouGetSignal Port Checker, Ping.eu Open Port Checker, the port 9000 is not open.
+

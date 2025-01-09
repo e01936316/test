@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# ANSI escape code for red text
+RED='\033[31m'
+# Reset color
+RESET='\033[0m'
+
+# Command to create 20 .txt files
+for i in {1..20}; do 
+    touch "file$i.txt"
+done
+
+# Command to rename the first 5 .txt files to .yml
+for i in {1..5}; do 
+    mv "file$i.txt" "file$i.yml"
+done
+
+# Command to print the latest created top 5 files in red
+echo -e "${RED}$(ls -lt | head -n 5)${RESET}"
